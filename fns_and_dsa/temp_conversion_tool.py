@@ -41,10 +41,10 @@ def main():
 
         if unit == 'F':
             converted_temp = convert_to_celsius(temperature)
-            print(f"{temperature}°F is {converted_temp}°C")
+            print(f"{temperature}°F is {converted_temp:.2f}°C")
         else:
             converted_temp = convert_to_fahrenheit(temperature)
-            print(f"{temperature}°C is {converted_temp}°F")
+            print(f"{temperature}°C is {converted_temp:.2f}°F")
 
     except ValueError as e:
         print(f"Error: {e}")
